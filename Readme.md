@@ -19,4 +19,7 @@ When the [Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122) loads 
 
 When a user selects a row in the Grid, the [DashboardViewer.DashboardItemSelectionChanged ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event occurs. The code in the event handler obtains filter values, assigns them to the dashboard parameters and stores the selection in the local variable.
 
+
+Dashboard parameter values modification fires the [DashboardViewer.DashboardItemVisualInteractivity ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event. The saved selection state is used to restore selected rows in the Grid.
+
 > Another approach to perform the same task involves [Master Filtering](https://docs.devexpress.com/Dashboard/116912). Review the [How to Display the Others Slice in the Pie Chart](https://github.com/DevExpress-Examples/how-to-display-pie-chart-others-slice) example for more information.
