@@ -15,7 +15,7 @@ The dashboard is designed as follows:
 * The calculated field **OthersChartSalesPerson** provides data for the chart's Argument and contains the following expression:
 `Iif(?ParamSalesPerson Is Null, [Sales Person], Iif([Sales Person] In (?ParamSalesPerson), [Sales Person], 'Others'))`
 
-When the [Dashboard Viewer](http://docs.devexpress.com/15348) loads the dashboard, [DashboardViewer.DashboardItemVisualInteractivity ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event occurs.The code in the event handler specifies the selection mode.
+When the [Dashboard Viewer](https://docs.devexpress.com/Dashboard/117122) loads the dashboard, [DashboardViewer.DashboardItemVisualInteractivity ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event occurs.The code in the event handler specifies the selection mode.
 
 When a user selects a row in the Grid, the [DashboardViewer.DashboardItemSelectionChanged ](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardItemVisualInteractivity) event occurs. The code in the event handler obtains filter values, assigns them to the dashboard parameters and stores the selection in the local variable.
 
