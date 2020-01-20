@@ -6,7 +6,7 @@
       <CalculatedFields>
         <CalculatedField Name="OthersChartSalesPerson" Expression="Iif([Parameters.ParamSalesPerson] Is Null, [Sales Person], Iif([Sales Person] In ([Parameters.ParamSalesPerson]), [Sales Person], 'Others'))" DataType="Auto" />
       </CalculatedFields>
-      <FileName>C:\Data\SalesPerson.dat</FileName>
+      <FileName>SalesPerson.dat</FileName>
       <Parameters />
       <SavedSchema>
         <Column>
